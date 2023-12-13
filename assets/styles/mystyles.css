@@ -1,0 +1,52 @@
+/** @format */
+/** @format */
+/** @format */
+/** @format */
+.button-base {
+  border: none;
+  padding: 28px;
+  text-align: center;
+  font-size: 18px;
+  color: red;
+  background-color: blue;
+}
+
+.details {
+  background-color: #781717;
+  font-size: Helvetica, sans-serif;
+  color: green;
+  color: red;
+  font-size: 25px;
+  font-weight: bold;
+  border: 1px solid blue;
+}
+
+.container-header {
+  background-color: #781717;
+  font-size: Helvetica, sans-serif;
+  color: blue;
+  color: red;
+  font-size: 35px;
+  font-weight: bold;
+  border: 1px solid blue;
+}
+
+/*
+// Herencia de estilos con @extend
+.button-base {
+    border: none;
+    padding: 28px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.button-report {
+    background-color: red;
+    @extend .button-base;
+}
+*/
+nav ul li a {
+  font-size: 30px;
+}
+
+/*# sourceMappingURL=mystyles.css.map */

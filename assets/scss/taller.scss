@@ -1,0 +1,12 @@
+/** @format */
+
+//Estilo de un botón para enviar con @mixin
+// Mixin para estilos de botón
+@mixin boton($color, $fondo) {
+    border: none;
+    padding: 28px;
+    text-align: center;
+    font-size: 18px;
+    color: $color;
+    background-color: $fondo;
+  }

@@ -1,0 +1,49 @@
+/** @format */
+
+@import "variables.scss";
+@import "mixins.scss";
+@import "taller.scss";
+
+//Estilo de un botón a partir de la taller.scss con valores
+.button-base {
+    @include boton($color: red, $fondo: blue);
+}
+
+.details {
+    background-color: $background;
+    font-size: $myFont;
+    $myColor: green;
+    color: $myColor;
+    @include important-content;
+}
+
+.container-header {
+    background-color: $background;
+    font-size: $myFont;
+    color: $myColor;
+    @include important-content(35px)
+}
+
+/*
+// Herencia de estilos con @extend
+.button-base {
+    border: none;
+    padding: 28px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.button-report {
+    background-color: red;
+    @extend .button-base;
+}
+*/
+nav {
+    ul {
+        li {
+            a {
+                font-size: 30px;
+            }
+        }
+    }
+}

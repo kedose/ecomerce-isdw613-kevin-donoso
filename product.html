@@ -1,33 +1,103 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" data-bs-theme="dark">
 
 <head>
     <title>Chesscake</title>
-    <link rel="stylesheet" href="assets/styles/styles.css">
-    <!--selector por clave-->
     <style>
         h1 {
             color: blue;
+            font-family: Arial, Helvetica, sans-serif;
+            font-style: italic;
+        }
+
+        #productDetailsTitle {
+            border: 1px solid black;
         }
     </style>
 </head>
 
 <body>
+    <ul>
+        <!--Bootstrap-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    </ul>
     <h1>Chesscake</h1>
-    <img src="assets/images/chesscake.jpg" width="600px" />
-    <h2>Detalle</h2>
-    <p style="font-size: 11px;">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam rutrum condimentum eros ac placerat. Fusce
-        ultrices lectus tristique lectus tempor, eget posuere dolor ultricies. Nulla eget urna at lectus gravida viverra
-        eu quis nisl. Fusce vel elementum nisi. Sed dictum semper purus. Etiam lacinia ac urna eu pretium. Nulla
-        ultrices mi nisl, eu eleifend mauris accumsan non. Nullam eu pretium orci, ut pharetra ipsum.
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Chesscake</li>
+        </ol>
+    </nav>
+    <div class="content">
+        <div class="row gx=10">
+            <div class="col col-md-3">
+                <!--<p style="background-color: blue; height: 100px;"></p>-->
+                <div class="card" style="width: 18rem;">
+                    <img src="assets/images/chesscake.jpg" class="card-img-top img-fluid" alt="Chesscake">
+                    <div class="card-body">
+                        <h5 class="card-title">Chesscake</h5>
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam rutrum condimentum eros ac
+                            placerat. Fusce
+                            ultrices lectus tristique lectus tempor, eget posuere dolor ultricies. Nulla eget urna at
+                            lectus gravida viverra
+                            eu quis nisl. Fusce vel elementum nisi. Sed dictum semper purus. Etiam lacinia ac urna eu
+                            pretium. Nulla
+                            ultrices mi nisl, eu eleifend mauris accumsan non. Nullam eu pretium orci, ut pharetra
+                            ipsum.
 
-        Fusce ac risus non massa fermentum pharetra. Aenean vulputate aliquam dapibus. Nullam dapibus fringilla pretium.
-        Morbi semper turpis vitae felis iaculis faucibus. Curabitur maximus nulla vel nulla tempor, id lacinia arcu
-        mattis. Phasellus sit amet tristique tortor, id sodales eros. Nam diam massa, lobortis vitae velit eget,
-        accumsan varius diam. Nam sed purus sed felis faucibus tincidunt vitae sed magna. Etiam gravida maximus nunc a
-        pretium. Praesent ultricies eleifend augue, et placerat nisl faucibus at.
-    </p>
+                            Fusce ac risus non massa fermentum pharetra. Aenean vulputate aliquam dapibus. Nullam
+                            dapibus fringilla pretium.
+                            Morbi semper turpis vitae felis iaculis faucibus. Curabitur maximus nulla vel nulla tempor,
+                            id lacinia arcu
+                            mattis. Phasellus sit amet tristique tortor, id sodales eros. Nam diam massa, lobortis vitae
+                            velit eget,
+                            accumsan varius diam. Nam sed purus sed felis faucibus tincidunt vitae sed magna. Etiam
+                            gravida maximus nunc a
+                            pretium. Praesent ultricies eleifend augue, et placerat nisl faucibus at.
+                        </p>
+                        <div class="collapse" id="chesscakeingredients">
+                            <div class="card card-body">
+                                <table>
+                                    <tr>
+                                        <td class="cell-header">Huevos:</td>
+                                        <td>3</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="cell-header">Fresas:</td>
+                                        <td>10 </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="cell-header">Crema de queso:</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="cell-header">Galleta Mar&iacute;a:</td>
+                                        <td>1</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="collapse" id="chesscakedetails">
+                            <p>
+                                Precio: $16
+                            </p>
+                        </div>
+                        <a href="#chesscakeingredients" data-bs-toggle="collapse"
+                            class="btn btn-primary">Ingredientes</a>
+
+                        <a href="#chesscakedetails" data-bs-toggle="collapse" class="btn btn-secondary">Detalles</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--<h1 id="productName">Chesscake</h1>
+    <img src="assets/images/chesscake.jpg" width="600px" />
+    <h2 id="productDetailsTitle">Detalle</h2>
+    
 
     <hr>
 
@@ -38,24 +108,7 @@
     <hr>
 
     <h2>Ingredientes</h2>
-    <table>
-        <tr>
-            <td class="cell-header">Huevos:</td>
-            <td>3</td>
-        </tr>
-        <tr>
-            <td class="cell-header">Fresas:</td>
-            <td>10 </td>
-        </tr>
-        <tr>
-            <td class="cell-header">Crema de queso:</td>
-            <td>1</td>
-        </tr>
-        <tr>
-            <td class="cell-header">Galleta Mar&iacute;a:</td>
-            <td>1</td>
-        </tr>
-    </table>
+-->
 </body>
 
 </html>
